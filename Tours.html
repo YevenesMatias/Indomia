@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>INDOMIA</title>
+		<link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/tour_style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+        });
+        });
+        </script>
+        <style> 
+            
+            #panel {
+            padding: 50px;
+            display: none;
+            }
+            </style>                
+    
+    </head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">123-456-7890</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<h1 class="logo"><a href="index.html">INDOMIA</a></h1>
+					</div>
+
+					<div class="container-user">
+						<a href="Login.html"><i class="fa-solid fa-user"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="Tours.html">Tours</a></li>
+						<li><a href="Traslados.html">Traslados</a></li>
+						<li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+						<li><a href="Galeria.html">Galería</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+        <main>
+            <div class="search-filter">
+                <div class="box-search-filter">
+                    <h1>Encuentra el tour ideal para ti</h1>
+                    <div class="options">
+                        <details class="custom-select">
+                            <summary class="radios" data-placeholder="Dificultad">
+                                <input type="radio" name="item1" id="default1" title="Dificultad..." checked>
+                                <input type="radio" name="item1" id="item1-1" title="Sin experiencia">
+                                <input type="radio" name="item1" id="item1-2" title="Principiante">
+                                <input type="radio" name="item1" id="item1-3" title="Intermedio">
+                                <input type="radio" name="item1" id="item1-4" title="Avanzado">
+                            </summary>
+                            <ul class="list">
+                                <li>
+                                    <label for="item1-1">
+                                        Sin experiencia
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item1-2">Principiante</label>
+                                </li>
+                                <li>
+                                    <label for="item1-3">Intermedio</label>
+                                </li>
+                                <li>
+                                    <label for="item1-4">Avanzado</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="custom-select">
+                            <summary class="radios" data-placeholder="Comuna">
+                                <input type="radio" name="item2" id="default2" title="Locación..." checked>
+                                <input type="radio" name="item2" id="item2-1" title="Punta Arenas">
+                                <input type="radio" name="item2" id="item2-2" title="Natales">
+                                <input type="radio" name="item2" id="item2-3" title="Tierra del fuego">
+                            </summary>
+                            <ul class="list">
+                                <li>
+                                    <label for="item2-1">
+                                        Punta Arenas
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="item2-2">Natales</label>
+                                </li>
+                                <li>
+                                    <label for="item2-3">Tierra del fuego</label>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="custom-select">
+                            <summary class="radios" data-placeholder="Jornada">
+                                <input type="radio" name="item3" id="default3" title="Jornada..." checked>
+                                <input type="radio" name="item3" id="item3-1" title="Medio día">
+                                <input type="radio" name="item3" id="item3-4" title="Todo el día">
+                            </summary>
+                            <ul class="list">
+                                <li>
+                                    <label for="item3-3">Medio dia</label>
+                                </li>
+                                <li>
+                                    <label for="item3-4">Todo el día</label>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+
+                    <button id="flip">Buscar</button>
+                    
+                </div>
+            </div>
+
+            <div id="panel">
+                <section class="container top-categories">
+                    <h1 class="heading-1">Hemos encontrado los puntos ideales para ti</h1>
+                    <div class="container-categories">
+                        <div class="card-category category-torres">
+                            <h2>Bases de las torres</h2>
+                            <ul>
+                                <li>Duración: Día completo</li>
+                                <li>Dificultad: Moderada</li>
+                                <li>Locación: Torres del Paine</li>
+                            </ul>
+                            <a href="Tours_paginas/BasesTorresdelPaine.html"><span>Ver más</span></a>
+                        </div>
+                        <div class="card-category category-grey">
+                            <h2>Glaciar grey</h2>
+                            <ul>
+                                <li>Duración: Medio día</li>
+                                <li>Dificultad: Fácil</li>
+                                <li>Locación: Torres del Paine</li>
+                            </ul>
+                            <span>Ver más</span>
+                        </div>
+                        <div class="card-category category-milodon">
+                            <h2>Cueva del milodón</h2>
+                            <ul>
+                                <li>Duración: Medio día</li>
+                                <li>Dificultad: Fácil</li>
+                                <li>Locación: Puerto Natales</li>
+                            </ul>
+                            <span>Ver más</span>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+					
+							<li>Teléfono: 123-456-7890</li>
+							<li>Fax: 55555300</li>
+							<li>EmaiL: contacto@indommia.cl</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="" style="background-color: rgb(98, 205, 74);">
+								<i class="fa-brands fa-whatsapp"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Preguntas Frecuentes</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Historial de ordenes</a></li>
+							<li><a href="#">Lista de deseos</a></li>
+							<li><a href="#">Boletín</a></li>
+							<li><a href="#">Reembolsos</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<p class="title-footer">Boletín informativo</p>
+
+						<div class="content">
+							<p>
+								Suscríbete a nuestros boletines ahora y mantente al
+								día con nuevas colecciones y ofertas exclusivas.
+							</p>
+							<input type="email" placeholder="Ingresa el correo aquí...">
+							<button>Suscríbete</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por Programación para el mundo &copy; 2022
+					</p>
+
+					<img src="img/payment.png" alt="Pagos">
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

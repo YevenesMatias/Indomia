@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"/>
+		<title>Bases Torres del paine</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="toursstyle.css">
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">123-456-7890</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<h1 class="logo"><a href="../index.html">INDOMIA</a></h1>
+					</div>
+
+					<div class="container-user">
+						<a href="../Login.html"><i class="fa-solid fa-user"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="../Tours.html">Tours</a></li>
+						<li><a href="../Traslados.html">Traslados</a></li>
+						<li><a href="../SobreNosotros.html">Sobre Nosotros</a></li>
+						<li><a href="../Galeria.html">Galería</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main-content">
+
+            <div class="titular">
+
+                <h1 class="title-page"> BASE TORRES DEL PAINE</h1>
+                <div class="subtitle">
+
+                    <img src="../img/Iconos/trekking.png" alt="icono" class="icon">
+                    <h3 class="subtitle-page">Trekking</h3>
+
+                </div>
+                
+
+            </div>
+
+            <p class="divider">--------------------------------------------------</p>
+
+            <div class="info-line">
+                <img src="../img/Iconos/dificultad.png" alt="icono" class="icon"> Dificultad: Principiante |
+                <img src="../img/Iconos/sol.png" alt="icono" class="icon"> Jornada: Medio día |
+                <img src="../img/Iconos/pasador-de-ubicacion.png" alt="icono" class="icon"> Ubicación: Torres del Paine, Natales
+            </div>
+
+            
+            <div class="slideshow">
+
+			
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="../img/Base-torres-del-paine-tour.jpeg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="../img/mapa-programa-base-torres-esp.jpeg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="../img/Morrena-Base-Torres-1.jpeg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+              <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+		
+
+			<script>let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+            </div>
+
+            <div class="info-page">
+
+                <div class="side-bar-page">
+                    <h3>Disponibilidad</h2>
+                        <div class="calendar">
+                            <label for="fecha">Selecciona una fecha:</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                        <div class="guide-info">
+                            <h4>Conoce a tu guía</h4>
+                            <p>Nombre Apellido</p>
+                            <img src="../img/foto_guia.avif" alt="Foto del guía">
+                            <p>Mensaje personal del guía, especialidades, etc.</p>
+                            <button onclick="openModal()">Reservar</button>
+                        </div>
+                </div>
+    
+                <div class="content-page">
+                    <h3>Sobre el tour</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est vero reprehenderit, adipisci, quo cumque pariatur aperiam dolorum aspernatur, voluptatum eius tempore deleniti commodi consequatur. Illo fuga autem sapiente et architecto iusto, tenetur ipsa illum natus fugiat. Numquam quia, eum similique maxime omnis ea deleniti odit repellat unde explicabo culpa, nostrum porro dolor! Architecto itaque hic animi, vitae quod corporis iure ducimus magni laudantium? Cumque recusandae, sunt quibusdam error provident nostrum! Corrupti vitae veniam ullam reprehenderit at eius libero sit ducimus nihil? Repudiandae non consectetur eius cum facilis reprehenderit sunt, officiis, mollitia tempora libero officia impedit. In, et quibusdam tempore voluptas sint provident natus dolores deserunt placeat! Dolor laudantium repellat quasi quos debitis? Atque, at quae distinctio ipsa quasi labore voluptatibus doloribus, qui amet aliquam dolorem maiores fuga cumque eum neque optio odio debitis? Possimus dicta officia libero aperiam. Quidem excepturi magni quam neque iure tenetur aperiam nihil impedit, aut necessitatibus reiciendis ipsam dolores, voluptatibus expedita repellat vel numquam perferendis modi ducimus. Veritatis, porro officia. Quibusdam veniam sunt unde eaque maiores corrupti perferendis rem voluptate animi qui tempore, aspernatur eveniet quidem harum mollitia. Vero iure reiciendis minus impedit natus, eligendi tenetur repudiandae fuga ex! Facere enim fugiat omnis officiis harum nostrum.</p>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572582.6910384274!2d-74.64257828375354!3d-52.07840686919014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbda53aae7b7496fd%3A0xfdf64626564fc406!2sTorres%20del%20Paine!5e0!3m2!1ses-419!2scl!4v1717862040312!5m2!1ses-419!2scl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <!-- Ventana modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Reserva tu tour</h2>
+            <!-- Aquí puedes agregar el formulario de reserva -->
+            <form action="#">
+                <label for="cantidad">Cantidad de personas:</label>
+                <select id="cantidad" name="cantidad" onchange="showForms()">
+                    <option value="0">Seleccione...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <!-- Contenedor para formularios adicionales -->
+                <div id="formsContainer"></div>
+                
+                <!-- Botón de enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="termsAndConditions" style="display: none;">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a></label><br><br>
+            </div>
+  
+        </div>
+    </div>
+            
+
+            
+            
+        </main>
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+					
+							<li>Teléfono: 123-456-7890</li>
+							<li>Fax: 55555300</li>
+							<li>EmaiL: contacto@indommia.cl</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="" style="background-color: rgb(98, 205, 74);">
+								<i class="fa-brands fa-whatsapp"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Preguntas Frecuentes</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Historial de ordenes</a></li>
+							<li><a href="#">Lista de deseos</a></li>
+							<li><a href="#">Boletín</a></li>
+							<li><a href="#">Reembolsos</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<p class="title-footer">Boletín informativo</p>
+
+						<div class="content">
+							<p>
+								Suscríbete a nuestros boletines ahora y mantente al
+								día con nuevas colecciones y ofertas exclusivas.
+							</p>
+							<input type="email" placeholder="Ingresa el correo aquí...">
+							<button>Suscríbete</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por Programación para el mundo &copy; 2022
+					</p>
+
+					<img src="../img/payment.png" alt="Pagos">
+				</div>
+			</div>
+		</footer>
+        <script>
+            const fechaInput = document.getElementById('fecha');
+            const guideInfo = document.querySelector('.guide-info');
+    
+            fechaInput.addEventListener('change', function() {
+                // Verificar si se ha seleccionado una fecha
+                if (this.value !== '') {
+                    // Mostrar el contenido del guía
+                    guideInfo.style.display = 'block';
+                } else {
+                    // Ocultar el contenido del guía si no se ha seleccionado ninguna fecha
+                    guideInfo.style.display = 'none';
+                }
+            });
+        </script>
+        <script>
+            const modal = document.getElementById('myModal');
+    
+            function openModal() {
+                modal.style.display = 'block'; // Muestra la ventana modal
+            }
+    
+            function closeModal() {
+                modal.style.display = 'none'; // Oculta la ventana modal
+            }
+    
+            // Cierra la ventana modal si se hace clic fuera de ella
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+    
+            function showForms() {
+                const cantidad = document.getElementById('cantidad').value;
+                const formsContainer = document.getElementById('formsContainer');
+                // Eliminar formularios previos
+                formsContainer.innerHTML = '';
+                // Generar nuevos formularios según la cantidad seleccionada
+                for (let i = 1; i <= cantidad; i++) {
+                    const form = `
+                        <div>
+                            <h3>Integrante nº ${i}</h3>
+                            <label for="nombre${i}">Nombre:</label>
+                            <input type="text" id="nombre${i}" name="nombre${i}" required><br><br>
+                            <label for="apellido${i}">Apellido:</label>
+                            <input type="text" id="apellido${i}" name="apellido${i}" required><br><br>
+                            <label for="rut${i}">RUT:</label>
+                            <input type="text" id="rut${i}" name="rut${i}" required><br><br>
+                            <label for="email${i}">Correo electrónico:</label>
+                            <input type="email" id="email${i}" name="email${i}" required><br><br>
+                            <label for="email${i}_repeat">Repetir correo electrónico:</label>
+                            <input type="email" id="email${i}_repeat" name="email${i}_repeat" required><br><br>
+                            <label>Menor de 18 años:</label>
+                            <input type="radio" id="menor${i}_si" name="menor${i}" value="si" required>
+                            <label for="menor${i}_si">Sí</label>
+                            <input type="radio" id="menor${i}_no" name="menor${i}" value="no" required>
+                            <label for="menor${i}_no">No</label><br><br>
+                            <input type="checkbox" id="terminos${i}" name="terminos${i}" required>
+                            <label for="terminos${i}">Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a></label><br><br>
+                        </div>
+                    `;
+                    formsContainer.innerHTML += form;
+                }
+            }
+        </script>
+        <script>
+            function showFormsAndTerms() {
+                const cantidad = document.getElementById('cantidad').value;
+                const formsContainer = document.getElementById('formsContainer');
+                const termsAndConditions = document.getElementById('termsAndConditions');
+        
+                if (cantidad > 0) {
+                    termsAndConditions.style.display = 'block'; // Mostrar términos y condiciones
+                    formsContainer.innerHTML = ''; // Limpiar formularios previos
+                    // Generar nuevos formularios según la cantidad seleccionada
+                    for (let i = 1; i <= cantidad; i++) {
+                        const form = `
+                            <div>
+                                <!-- Aquí van los campos del formulario -->
+                            </div>
+                        `;
+                        formsContainer.innerHTML += form;
+
+                        
+                    }
+                    document.querySelector('button[type="submit"]').addEventListener('click', function() {
+                alert("Reserva exitosa");
+            }
+                }
+            }
+        </script>
+        <script>
+            
+
+        </script>
+	</body>
+</html>
